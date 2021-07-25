@@ -11,7 +11,6 @@
     <div id="contenedor">
         <h1>FRUTERIA</h1>
         <div id="paloArriba"></div>
-        </div>
         <div id="centro">
             <div id="paloIzquierda">
                 <div class="paloVistoIzquierda"></div>
@@ -19,7 +18,7 @@
             <div id="mostrador">
                 <div id="balda1">
                     <img class="balda" src="../ASSETS/tabla.png">
-                    <img src="../ASSETS/manzana.png" class="fruta">
+                    <img src="../ASSETS/manzana.png" id="fruta" draggable="true" ondragstart="drag(event)">
                 </div>
                 <div id="balda2"><img class="balda" src="../ASSETS/tabla.png"></div>
                 <div id="balda3"><img class="balda" src="../ASSETS/tabla.png"></div>
@@ -29,7 +28,20 @@
             </div>
         </div>
         <div id="paloAbajo"></div>
-        <img src="../ASSETS/canasta.png" class="cesta" alt="cesta">
+        <img src="../ASSETS/canasta.png" id="cesta" alt="cesta" ondrop="drop(event, this)">
     </div>
+    <div id="divCantidad">
+        <h2>Introduce cantidad:</h2>
+        <input type="number" name="Introduce cantidad" id="cantidad">
+        <button type="submit" onclick="anadirFruta()">Aceptar</button>
+    </div>
+    <div id="contenidoCesta">
+        <h1>FRUTAS EN LA CESTA</h1>
+        <div id="frutasCesta">
+            
+        </div>
+        <button onclick="ocultarCesta()">Cerrar</button>
+    </div>
+    <script src="../JS/index.js"></script>
 </body>
 </html>

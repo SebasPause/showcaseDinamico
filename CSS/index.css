@@ -55,16 +55,41 @@ h1 {
     width: 100%;
 }
 
-.cesta {
+#cesta {
     display: block;
     margin: auto;
 }
 
-.fruta {
+#fruta {
     width: 5%;
     position: absolute;
     left: 37%;
 }
 
+#divCantidad {
+    margin-left: 37%;
+    width: 25%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    visibility: hidden;
+    background-color: gray;
+    padding-bottom: 2%;
+}
+
+#contenidoCesta {
+    margin-left: 10%;
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    visibility: hidden;
+    background-color: gray;
+    padding-bottom: 2%;
+}
+
+#frutasCesta {
+    display: flex;
+}
 
 
