@@ -1,3 +1,5 @@
+localStorage.setItem('cantidadNrFrutas',0);
+
 const contenedor = document.getElementById('contenedor');
 
 contenedor.addEventListener('click', () => {
@@ -37,10 +39,19 @@ const drop = (ev, target) =>{
 const anadirFruta = () => {
     document.getElementById('divCantidad').style.visibility = "hidden";
     var cantidadAnadida = document.getElementById('cantidad').value;
+
+    if (cantidadAnadida=='0' || cantidadAnadida=='') {
+        alert("Introduce una cantidad mayor a 0");
+        return;
+    }
+
     var objeto = document.createElement('div');
-    objeto.setAttribute('id','divFruta');
+    var nrFrutas = parseInt(localStorage.getItem('cantidadNrFrutas')) +1;
+    localStorage.setItem('cantidadNrFrutas',nrFrutas);
+    objeto.setAttribute('id','divFruta'+nrFrutas);
     document.getElementById('frutasCesta').appendChild(objeto);
-    var divObjeto = document.getElementById('divFruta');
+    document.getElementById('frutasCesta').style.width = '100%';
+    var divObjeto = document.getElementById('divFruta'+nrFrutas);
     divObjeto.style.width = '100%';
     var divFruta = document.getElementById(localStorage.getItem('fruta'));
     divFruta.style.position = 'relative';

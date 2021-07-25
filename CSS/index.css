@@ -66,6 +66,42 @@ h1 {
     left: 37%;
 }
 
+#platano {
+    width: 8%;
+    position: absolute;
+    left: 45%;
+}
+
+#melocoton {
+    width: 10%;
+    position: absolute;
+    left: 55%;
+}
+
+#melon {
+    width: 9%;
+    position: absolute;
+    left: 35%;
+}
+
+#nectarina {
+    width: 7%;
+    position: absolute;
+    left: 45%;
+}
+
+#mango {
+    width: 9%;
+    position: absolute;
+    left: 55%;
+}
+
+#sandia {
+    width: 6%;
+    position: absolute;
+    left: 45%;
+}
+
 #divCantidad {
     margin-left: 37%;
     width: 25%;
@@ -78,11 +114,11 @@ h1 {
 }
 
 #contenidoCesta {
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 15%;
+    width: 70%;
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 5%;
     visibility: hidden;
     background-color: gray;
     padding-bottom: 2%;
