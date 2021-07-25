@@ -60,7 +60,7 @@ h1 {
     margin: auto;
 }
 
-#fruta {
+#manzana {
     width: 5%;
     position: absolute;
     left: 37%;
@@ -88,8 +88,5 @@ h1 {
     padding-bottom: 2%;
 }
 
-#frutasCesta {
-    display: flex;
-}
 
 
