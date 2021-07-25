@@ -1,0 +1,70 @@
+h1 {
+    text-align: center;
+}
+
+#paloArriba, #paloAbajo {
+    width: 35%;
+    height: 20px;
+    background-color: #eed09d;
+    margin: auto;
+}
+
+#paloIzquierda{
+    width: 35%;
+    float: left;
+    
+}
+
+.paloVistoIzquierda {
+    background-color: #eed09d;
+    float: right;
+    width: 7%;
+    height: 100%;
+}
+
+#paloDerecha{
+    width: 35%;
+    float: right;
+}
+
+.paloVistoDerecha {
+    background-color: #eed09d;
+    float: left;
+    width: 7%;
+    height: 100%;
+}
+
+#mostrador {
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    background-color: #dbdfe5;
+}
+
+#centro {
+    display: flex;
+}
+
+#balda1, #balda2, #balda3 {
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.balda {
+    width: 100%;
+}
+
+.cesta {
+    display: block;
+    margin: auto;
+}
+
+.fruta {
+    width: 5%;
+    position: absolute;
+    left: 37%;
+}
+
+
+
